@@ -1,0 +1,3 @@
+﻿  test.c
+E:\Proram Design\C\BitClass\链表的操作\test.c(25,30): warning C4477: “scanf”: 格式字符串“%d”需要类型“int *”的参数，但可变参数 1 拥有了类型“int”
+  链表的操作.vcxproj -> E:\Proram Design\C\BitClass\链表的操作\Debug\链表的操作.exe
