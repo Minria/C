@@ -1,0 +1,4 @@
+﻿  test.c
+E:\CLanguage\LeetCode\青蛙跳梯子\test.c(5,9): warning C4033: “climbStairs”必须返回值
+E:\CLanguage\LeetCode\青蛙跳梯子\test.c(13): warning C4715: “climbStairs”: 不是所有的控件路径都返回值
+  青蛙跳梯子.vcxproj -> E:\CLanguage\LeetCode\青蛙跳梯子\Debug\青蛙跳梯子.exe
