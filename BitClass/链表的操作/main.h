@@ -11,6 +11,6 @@ typedef struct Nums {
 int ListLength(Nums* head);
 void* ListCreat(Nums* head);
 void* ListInsert(Nums* head);
-void* ListDel();
+void* ListDel(Nums*head,int n);
 void ListPrint(Nums* head);
 

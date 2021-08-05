@@ -15,6 +15,7 @@ void* ListCreat(Nums* head) {
 }
 void* ListInsert(Nums* head) {
 	int count = ListCreat(head);
+	printf("%d\n", count);
 	Nums* p1 = NULL, * p2 = NULL;
 	p1 = p2 = (Nums*)malloc(sizeof(Nums));
 	if (count == 0) {
@@ -50,7 +51,10 @@ void* ListDel(Nums*head,int n) {
 			if (q->data == n) {
 				p->next = q->next;
 				free(q);
+				return head;
 			}
+			p = q;
+			q = q->next;
 		}
 	}
 	return head;
@@ -66,4 +70,5 @@ void menu() {
 	printf("1.添加\n");
 	printf("2.删除\n");
 	printf("3.打印\n");
+	printf("4.表长\n");
 }

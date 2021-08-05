@@ -11,7 +11,7 @@ int main() {
 		scanf("%d", &n);
 		switch (n) {
 		case 0:break;
-		case 1:head = ListInsert(head); break;
+		case 1:head=ListInsert(head); break;
 		case 2: {
 			printf("输入删除数值:");
 			int temp = 0;
@@ -20,10 +20,10 @@ int main() {
 			break;
 		}
 		case 3:ListPrint(head); break;
+		case 4:printf("%d\n", ListLength(head)); break;
 		default:printf("重新输入\n");
 			break;
 		}
 	}
 		return 0;
 }
-
