@@ -21,6 +21,7 @@ int main() {
 		}
 		case 3:ListPrint(head); break;
 		case 4:printf("%d\n", ListLength(head)); break;
+		case 5:ListChange(head); break;
 		default:printf("ÖØĞÂÊäÈë\n");
 			break;
 		}

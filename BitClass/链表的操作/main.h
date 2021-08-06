@@ -12,5 +12,6 @@ int ListLength(Nums* head);
 void* ListCreat(Nums* head);
 void* ListInsert(Nums* head);
 void* ListDel(Nums*head,int n);
+void ListChange(Nums* head);
 void ListPrint(Nums* head);
 
