@@ -49,13 +49,17 @@ void ShellSort(int* nums, int numsSize) {
 void BubbleSort(int* nums, int numsSize) {
 	int i = 0, j = 0;
 	for (i = 0; i < numsSize - 1; i++) {
+		int flag = 0;
 		for (j = numsSize - 1; j > i; j--) {
 			if (nums[j - 1] > nums[j]) {
 				int temp = nums[j - 1];
-				nums[j - 1] = nums[i];
-				nums[i] = temp;
+				nums[j - 1] = nums[j];
+				nums[j] = temp;
+				flag = 1;
 			}
 		}
+		if (flag == 0)
+			return;
 	}
 }
 void QuickSort(int* nums, int left,int right) {
