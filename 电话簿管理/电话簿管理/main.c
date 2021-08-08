@@ -14,6 +14,7 @@ int main() {
 		case 0:printf("程序即将退出"); break;
 		case 1:head = ListInsert(head); break;
 		case 2:ListPrint(head); break;
+		case 3:head = ListDel(head); break;
 		default:printf("重新输入>>");
 			break;
 		}
