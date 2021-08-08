@@ -19,7 +19,7 @@ void* ListInsert(struct PhoneBook* head) {
 	}
 	while (1) {
 		p1 = (PhoneBook*)malloc(sizeof(PhoneBook));
-		printf("输入姓名>>"); scanf("%s",&p1->name);
+		printf("输入姓名>>"); scanf("%s", &p1->name);
 		if (strcmp(p1->name, "0") == 0) {
 			free(p1);
 			break;
@@ -37,44 +37,48 @@ void* ListInsert(struct PhoneBook* head) {
 	return head;
 }
 void* ListDel(struct PhoneBook* head) {
-	int n = 0;
+	if (head == NULL) {
+		printf("联系人为空;即将返回");
+		return;
+	}
+	printf("输入查找姓名或号码>>");
+	char str[20] = { 0 };
+	scanf("%s", str);
+	struct PhoneBook* p1 = head,*p2=NULL;
+	while (strcmp(p1->name, str) != 0 && strcmp(p1->telnum, str) != 0) {
+		p2 = p1;
+		p1 = p1->next;
+		if (p1 == NULL) {
+			printf("电话簿未有此联系人");
+			return head;
+		}
+	}
+	printf("找到联系人信息如下\n");
+	printf("姓名>>%s\n", p1->name);
+	printf("号码>>%s\n", p1->telnum);
+	printf("输入yes删除;输入no取消\n");
+	char str1[5] = { 0 };
 	while (1) {
-		printf("0.退出\n");
-		printf("1.查找号码\n");
-		scanf("%d", &n);
-		int count = 0;
-		if (n == 0) break;
-		else if (n == 1) {
-			char nums[11] = { 0 };
-			printf("查找号码>>");
-			scanf("%s",nums);
-			struct PhoneBook* p2 = head, * p1 = p2->next;
-			while (p1) {
-				if (strcmp(p1->telnum, nums) == 0) {
-					printf("查到成功!!!\n");
-					count = 1;
-					printf("姓名>>%s\n", p1->name);
-					printf("号码>>%s\n", p1->telnum);
-					printf("输入0退出;输入其他删除\n");
-					int a = 0;
-					scanf("%s", &a);
-					if (a>0) {
-						p2->next=p1->next;
-						free(p1);
-						printf("删除成功!!!\n");
-						break;
-					}
-					else
-						break;
-					p2 = p1;
-					p1 = p1->next;
-				}
+		printf("输入yes或no>>");
+		gets(str1,4);
+		if (strcmp(str1, "yes") == 0) {
+			if (p1 == head) {
+				head = p1->next;
+				free(p1);
 			}
-			if (count == 0)
-				printf("未查询到!!!");
+			else {
+				p2->next = p1->next;
+				free(p1);
+			}
+			printf("删除成功\n");
+			break;
+		}
+		else if (strcmp(str1, "no") == 0) {
+			printf("取消删除\n");
+			break;
 		}
 		else
-			printf("该功能未实现，请重新输入");
+			printf("重新输入\n");
 	}
 	return head;
 }

@@ -1,3 +1,5 @@
 ﻿  function.c
-E:\CLanguage\电话簿管理\电话簿管理\function.c(60,12): warning C4477: “scanf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
+E:\CLanguage\电话簿管理\电话簿管理\function.c(42,3): warning C4033: “ListDel”必须返回值
+E:\CLanguage\电话簿管理\电话簿管理\function.c(63,7): warning C4013: “gets”未定义；假设外部返回 int
+E:\CLanguage\电话簿管理\电话簿管理\function.c(84): warning C4715: “ListDel”: 不是所有的控件路径都返回值
   电话簿管理.vcxproj -> E:\CLanguage\电话簿管理\电话簿管理\Debug\电话簿管理.exe
