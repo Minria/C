@@ -13,4 +13,7 @@ typedef struct PhoneBook {
 void* ListCreat(struct PhoneBook* head);
 void* ListInsert(struct PhoneBook* head);
 void* ListDel(struct PhoneBook* head);
+void ListFindByName(struct PhoneBook* head);
+void ListFindByNum(struct PhoneBook* head);
+void ListFind(struct PhoneBook* head);
 void ListPrint(struct PhoneBook* head);

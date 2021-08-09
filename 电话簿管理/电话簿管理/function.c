@@ -1,4 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
+
 #include"book.h"
 
 
@@ -11,6 +12,7 @@ void menu() {
 	printf("1.添加\n");
 	printf("2.打印\n");
 	printf("3.删除\n");
+	printf("4.查找\n");
 }
 void* ListInsert(struct PhoneBook* head) {
 	PhoneBook* p1 = NULL, *p2 = head;
@@ -81,6 +83,60 @@ void* ListDel(struct PhoneBook* head) {
 			printf("重新输入\n");
 	}
 	return head;
+}
+void ListFindByName(struct PhoneBook* head){
+	char name[20] = { 0 };
+	printf("输出要查找的姓名>>");
+	scanf("%s", name);
+	int count = 0;
+	while (head) {
+		if (strcmp(head->name, name) == 0) {
+			count = 1;
+			printf("姓名>>%s\n", head->name);
+			printf("号码>>%s\n", head->telnum);
+			printf("------------------------");
+			head = head->next;
+		}
+	}
+	if (count == 0)
+		printf("没有该联系人");
+	return;
+}
+void ListFind(struct PhoneBook *head) {
+	printf("0.退出\n");
+	printf("1.按姓名查询\n");
+	printf("2.按号码查询\n");
+	int n = 0;
+	while (1) {
+		printf("Input>>");
+		scanf("%d", &n);
+		getchar();
+		if (n == 0) break;
+		switch (n)
+		{
+		case 1:ListFindByName(head); break;
+		case 2:ListFindByNum(head); break;
+		default:printf("无法执行该操作\n");break;
+		}
+	}
+}
+void ListFindByNum(struct PhoneBook* head) {
+	char nums[20] = { 0 };
+	printf("输出要查找的号码>>");
+	scanf("%s", nums);
+	int count = 0;
+	while (head) {
+		if (strcmp(head->telnum, nums) == 0) {
+			count = 1;
+			printf("姓名>>%s\n", head->name);
+			printf("号码>>%s\n", head->telnum);
+			printf("------------------------\n");
+			head = head->next;
+		}
+	}
+	if (count == 0)
+		printf("没有该联系人");
+	return;
 }
 void ListPrint(struct PhoneBook* head) {
 	while (head) {
