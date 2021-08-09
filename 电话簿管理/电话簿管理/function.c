@@ -13,6 +13,7 @@ void menu() {
 	printf("2.打印\n");
 	printf("3.删除\n");
 	printf("4.查找\n");
+	printf("5.修改\n");
 }
 void* ListInsert(struct PhoneBook* head) {
 	PhoneBook* p1 = NULL, *p2 = head;
@@ -137,6 +138,31 @@ void ListFindByNum(struct PhoneBook* head) {
 	if (count == 0)
 		printf("没有该联系人");
 	return;
+}
+void* ListChange(struct PhoneBook* head) {
+	struct PhoneBook* p1 = head;
+	printf("输入要修改的姓名或者号码>>");
+	char str[20] = { 0 };
+	scanf("%s", str);
+	while (p1) {
+		if (strcmp(p1->name, str) == 0 || strcmp(p1->telnum, str) == 0) {
+			printf("姓名>>%s\n", p1->name);
+			printf("号码>>%s\n", p1->telnum);
+			if (strcmp(p1->name, str) == 0) {
+				printf("修改后姓名>>");
+				scanf("%s", p1->name);
+			}
+			else {
+				printf("修改后号码\n");
+				scanf("%s", p1->telnum);
+			}
+			return head;
+		}
+		p1 = p1->next;
+	}
+	if (p1 == NULL)
+		printf("未查询到\n");
+	return head;
 }
 void ListPrint(struct PhoneBook* head) {
 	while (head) {

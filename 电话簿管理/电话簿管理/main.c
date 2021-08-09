@@ -16,6 +16,7 @@ int main() {
 		case 2:ListPrint(head); break;
 		case 3:head = ListDel(head); break;
 		case 4:ListFind(head); break;
+		case 5:head = ListChange(head);
 		default:printf("ÖØĞÂÊäÈë>>");
 			break;
 		}
