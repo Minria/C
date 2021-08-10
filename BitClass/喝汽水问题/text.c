@@ -2,7 +2,7 @@
 #include<stdio.h>
 int main() {
 	int price = 20;
-	int n = price / 2;//初始手里空瓶子数
+	int n = price;//初始手里空瓶子数
 	int count = n;//喝了多少汽水
 	while (n>1) {
 		int temp = count;
