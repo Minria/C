@@ -40,3 +40,34 @@
 //}
 
 
+//int main() {
+//	int arr[10] = { 0 };
+//	int* p = arr;//arr是数组首元素地址
+//	int (*parr)[10] = &arr;
+//	return 0;
+//}
+
+
+
+void print1(int (*parr)[10], int n) {
+	int i = 0;
+	for (i = 0; i < n; i++)
+		printf("%d ", *(*(parr + 0) + i));
+}
+void print2(int (*parr2)[5], int cow, int col) {
+	int i = 0,j = 0;
+	for (i = 0; i < cow; i++) {
+		for (j = 0; j < col; j++)
+			printf("%d ", *((*parr2 + i) + j));
+		printf("\n");
+	}
+}
+
+int main() {
+	int arr[10] = { 1,2,3,4,5,6,7,8,9,0 };
+	int arr2[3][5] = { 1,2,3,4,5,2,3,4,5,6,3,4,5,6,7 };
+	print1(arr, 10);
+	printf("\n");
+	print2(arr2, 3, 5);
+	return 0;
+}
