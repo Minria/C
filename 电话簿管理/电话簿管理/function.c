@@ -5,15 +5,19 @@
 
 
 
-void menu() {
-	printf("0.退出\n");
-	printf("1.添加\n");
-	printf("2.打印\n");
-	printf("3.删除\n");
-	printf("4.查找\n");
-	printf("5.修改\n");
-	printf("6.排序\n");
-}
+void menu()
+{
+	printf("           欢迎进入电话簿系统            \n");
+	printf("********************************************\n");
+	printf("        0、退出系统                 \n");
+	printf("        1、添加联系人               \n");
+	printf("        2、查找联系人               \n");
+	printf("        3、删除联系人               \n");
+	printf("        4、显示联系人               \n");
+	printf("        5、修改联系人               \n");
+	printf("        6、查看电话簿               \n");
+	printf("********************************************\n");
+}//菜单界面 
 void* ListCreat(struct PhoneBook* head) {
 	head = NULL;
 	return head;
@@ -173,7 +177,7 @@ int ListLength(struct PhoneBook* head) {
 	}
 	return count;
 }
-void* ListSort(struct PhoneBook* head) {
+void ListSort(struct PhoneBook* head) {
 	int n = ListLength(head);
 	int i, j;
 	struct PhoneBook a[200] = { 0 }, * p = head, temp;

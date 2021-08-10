@@ -18,7 +18,7 @@ int main() {
 			break; 
 		case 2:
 			head = ListLoad(head);
-			ListPrint(head);
+			ListFind(head);
 			break;
 		case 3:
 			head = ListLoad(head);
@@ -27,7 +27,7 @@ int main() {
 			break;
 		case 4:
 			head = ListLoad(head);
-			ListFind(head); 
+			ListPrint(head);
 			break;
 		case 5:
 			head = ListLoad(head);
@@ -36,7 +36,7 @@ int main() {
 			break;
 		case 6:
 			head = ListLoad(head);
-			ListPrint(head); break;
+			ListSort(head); break;
 		default:printf("ÖØĞÂÊäÈë>>");
 			break;
 		}
