@@ -179,7 +179,9 @@ int ListLength(struct PhoneBook* head) {
 }
 void ListSort(struct PhoneBook* head) {
 	int n = ListLength(head);
-	int i, j;
+	if (n == 0)
+		printf("电话簿为空");
+	int i=0, j=0;
 	struct PhoneBook a[200] = { 0 }, * p = head, temp;
 	for (i = 0; i <n; i++)
 	{
@@ -206,6 +208,8 @@ void ListSort(struct PhoneBook* head) {
 	}
 }
 void ListPrint(struct PhoneBook* head) {
+	if (head == NULL)
+		printf("电话簿为空\n");
 	while (head) {
 		printf("姓名>>%s\n", head->name);
 		printf("号码>>%s\n", head->telnum);

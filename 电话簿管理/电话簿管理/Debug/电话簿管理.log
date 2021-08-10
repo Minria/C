@@ -1,1 +1,25 @@
-﻿  电话簿管理.vcxproj -> E:\CLanguage\电话簿管理\电话簿管理\Debug\电话簿管理.exe
+﻿  function.c
+E:\CLanguage\电话簿管理\电话簿管理\function.c(52,3): warning C4033: “ListDel”必须返回值
+E:\CLanguage\电话簿管理\电话簿管理\function.c(73,7): warning C4013: “gets”未定义；假设外部返回 int
+E:\CLanguage\电话簿管理\电话簿管理\function.c(226,7): warning C4013: “exit”未定义；假设外部返回 int
+E:\CLanguage\电话簿管理\电话簿管理\function.c(254,44): warning C4047: “=”:“PhoneBook **”与“PhoneBook *”的间接级别不同
+E:\CLanguage\电话簿管理\电话簿管理\function.c(261,9): warning C4047: “=”:“PhoneBook *”与“PhoneBook **”的间接级别不同
+E:\CLanguage\电话簿管理\电话簿管理\function.c(261,53): warning C4047: “=”:“PhoneBook **”与“PhoneBook *”的间接级别不同
+E:\CLanguage\电话簿管理\电话簿管理\function.c(264,16): warning C4047: “=”:“PhoneBook *”与“PhoneBook **”的间接级别不同
+E:\CLanguage\电话簿管理\电话簿管理\function.c(265,10): warning C4047: “=”:“PhoneBook *”与“PhoneBook **”的间接级别不同
+E:\CLanguage\电话簿管理\电话簿管理\function.c(266,44): warning C4047: “=”:“PhoneBook **”与“PhoneBook *”的间接级别不同
+  main.c
+E:\CLanguage\电话簿管理\电话簿管理\main.c(9,7): warning C4013: “menu”未定义；假设外部返回 int
+E:\CLanguage\电话簿管理\电话簿管理\main.c(20,24): warning C4047: “函数”:“PhoneBook **”与“PhoneBook *”的间接级别不同
+E:\CLanguage\电话簿管理\电话簿管理\main.c(20,20): warning C4024: “ListLoad”: 形参和实参 1 的类型不同
+E:\CLanguage\电话簿管理\电话簿管理\main.c(24,24): warning C4047: “函数”:“PhoneBook **”与“PhoneBook *”的间接级别不同
+E:\CLanguage\电话簿管理\电话簿管理\main.c(24,20): warning C4024: “ListLoad”: 形参和实参 1 的类型不同
+E:\CLanguage\电话簿管理\电话簿管理\main.c(29,24): warning C4047: “函数”:“PhoneBook **”与“PhoneBook *”的间接级别不同
+E:\CLanguage\电话簿管理\电话簿管理\main.c(29,20): warning C4024: “ListLoad”: 形参和实参 1 的类型不同
+E:\CLanguage\电话簿管理\电话簿管理\main.c(33,24): warning C4047: “函数”:“PhoneBook **”与“PhoneBook *”的间接级别不同
+E:\CLanguage\电话簿管理\电话簿管理\main.c(33,20): warning C4024: “ListLoad”: 形参和实参 1 的类型不同
+E:\CLanguage\电话簿管理\电话簿管理\main.c(38,24): warning C4047: “函数”:“PhoneBook **”与“PhoneBook *”的间接级别不同
+E:\CLanguage\电话簿管理\电话簿管理\main.c(38,20): warning C4024: “ListLoad”: 形参和实参 1 的类型不同
+  正在生成代码...
+E:\CLanguage\电话簿管理\电话簿管理\function.c(94): warning C4715: “ListDel”: 不是所有的控件路径都返回值
+  电话簿管理.vcxproj -> E:\CLanguage\电话簿管理\电话簿管理\Debug\电话簿管理.exe
