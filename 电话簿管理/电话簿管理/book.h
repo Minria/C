@@ -20,3 +20,5 @@ void ListFind(struct PhoneBook* head);
 void* ListChange(struct PhoneBook* head);
 void* ListSort(struct PhoneBook* head);
 void ListPrint(struct PhoneBook* head);
+void* ListLoad(struct PhoneBook** head);
+void ListSave(struct PhoneBook* head);

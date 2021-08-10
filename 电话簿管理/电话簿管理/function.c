@@ -14,7 +14,6 @@ void menu() {
 	printf("5.修改\n");
 	printf("6.排序\n");
 }
-
 void* ListCreat(struct PhoneBook* head) {
 	head = NULL;
 	return head;
@@ -210,3 +209,56 @@ void ListPrint(struct PhoneBook* head) {
 	}
 	printf("\n\n");
 }
+void ListSave(struct PhoneBook* head)
+{
+	FILE* fp;
+	if ((fp = fopen("dianhuabu.dat", "wb")) == NULL)
+	{
+		printf("File cannot be opened\n");
+		exit(0);
+	}
+	if (head == NULL)
+	{
+		printf("通讯录为空\n");
+		return;
+	}
+	PhoneBook* p1 = head;
+	while (p1 != NULL)
+	{
+		if (fwrite(p1, sizeof(PhoneBook), 1, fp) != 1)
+		{
+			printf("cannot open file\n");
+			return;
+		}
+		p1 = p1->next;
+	}
+	printf("保存完毕!\n"); fclose(fp);
+}//文件写入函数 
+void* ListLoad(struct PhoneBook** head)
+{
+	FILE* fp;
+	if ((fp = fopen("dianhuabu.dat", "rb")) == NULL)
+	{
+		printf("电话簿为空，请重新创建\n");
+		exit(0);
+	}
+	PhoneBook** p1, * p2;
+	p1 = (PhoneBook*)malloc(sizeof(PhoneBook));
+	if (fread(p1, sizeof(PhoneBook), 1, fp) == 0)
+	{
+		printf("电话簿为空，请重新创建");
+		return head;
+	}
+	head = p1;
+	p2 = p1; p1 = (PhoneBook*)malloc(sizeof(PhoneBook));
+	while (fread(p1, sizeof(PhoneBook), 1, fp))
+	{
+		p2->next = p1;
+		p2 = p1;
+		p1 =(PhoneBook*)malloc(sizeof(PhoneBook));
+	}
+	p2->next = NULL;
+	free(p1);
+	return(head);
+	fclose(fp);
+}//文件读取函数 

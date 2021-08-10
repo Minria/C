@@ -1,6 +1,26 @@
 ﻿  function.c
-E:\CLanguage\电话簿管理\电话簿管理\function.c(49,3): warning C4033: “ListDel”必须返回值
-E:\CLanguage\电话簿管理\电话簿管理\function.c(70,7): warning C4013: “gets”未定义；假设外部返回 int
-E:\CLanguage\电话簿管理\电话簿管理\function.c(91): warning C4715: “ListDel”: 不是所有的控件路径都返回值
-E:\CLanguage\电话簿管理\电话簿管理\function.c(204): warning C4716: “ListSort”: 必须返回一个值
+E:\CLanguage\电话簿管理\电话簿管理\function.c(48,3): warning C4033: “ListDel”必须返回值
+E:\CLanguage\电话簿管理\电话簿管理\function.c(69,7): warning C4013: “gets”未定义；假设外部返回 int
+E:\CLanguage\电话簿管理\电话簿管理\function.c(218,7): warning C4013: “exit”未定义；假设外部返回 int
+E:\CLanguage\电话簿管理\电话簿管理\function.c(246,44): warning C4047: “=”:“PhoneBook **”与“PhoneBook *”的间接级别不同
+E:\CLanguage\电话簿管理\电话簿管理\function.c(253,9): warning C4047: “=”:“PhoneBook *”与“PhoneBook **”的间接级别不同
+E:\CLanguage\电话簿管理\电话簿管理\function.c(253,53): warning C4047: “=”:“PhoneBook **”与“PhoneBook *”的间接级别不同
+E:\CLanguage\电话簿管理\电话簿管理\function.c(256,16): warning C4047: “=”:“PhoneBook *”与“PhoneBook **”的间接级别不同
+E:\CLanguage\电话簿管理\电话簿管理\function.c(257,10): warning C4047: “=”:“PhoneBook *”与“PhoneBook **”的间接级别不同
+E:\CLanguage\电话簿管理\电话簿管理\function.c(258,44): warning C4047: “=”:“PhoneBook **”与“PhoneBook *”的间接级别不同
+  main.c
+E:\CLanguage\电话簿管理\电话簿管理\main.c(9,7): warning C4013: “menu”未定义；假设外部返回 int
+E:\CLanguage\电话簿管理\电话簿管理\main.c(20,24): warning C4047: “函数”:“PhoneBook **”与“PhoneBook *”的间接级别不同
+E:\CLanguage\电话簿管理\电话簿管理\main.c(20,20): warning C4024: “ListLoad”: 形参和实参 1 的类型不同
+E:\CLanguage\电话簿管理\电话簿管理\main.c(24,24): warning C4047: “函数”:“PhoneBook **”与“PhoneBook *”的间接级别不同
+E:\CLanguage\电话簿管理\电话簿管理\main.c(24,20): warning C4024: “ListLoad”: 形参和实参 1 的类型不同
+E:\CLanguage\电话簿管理\电话簿管理\main.c(29,24): warning C4047: “函数”:“PhoneBook **”与“PhoneBook *”的间接级别不同
+E:\CLanguage\电话簿管理\电话簿管理\main.c(29,20): warning C4024: “ListLoad”: 形参和实参 1 的类型不同
+E:\CLanguage\电话簿管理\电话簿管理\main.c(33,24): warning C4047: “函数”:“PhoneBook **”与“PhoneBook *”的间接级别不同
+E:\CLanguage\电话簿管理\电话簿管理\main.c(33,20): warning C4024: “ListLoad”: 形参和实参 1 的类型不同
+E:\CLanguage\电话簿管理\电话簿管理\main.c(38,24): warning C4047: “函数”:“PhoneBook **”与“PhoneBook *”的间接级别不同
+E:\CLanguage\电话簿管理\电话簿管理\main.c(38,20): warning C4024: “ListLoad”: 形参和实参 1 的类型不同
+  正在生成代码...
+E:\CLanguage\电话簿管理\电话簿管理\function.c(90): warning C4715: “ListDel”: 不是所有的控件路径都返回值
+E:\CLanguage\电话簿管理\电话簿管理\function.c(203): warning C4716: “ListSort”: 必须返回一个值
   电话簿管理.vcxproj -> E:\CLanguage\电话簿管理\电话簿管理\Debug\电话簿管理.exe
