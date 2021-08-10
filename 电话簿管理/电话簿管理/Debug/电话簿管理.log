@@ -1,8 +1,6 @@
 ﻿  function.c
-E:\CLanguage\电话簿管理\电话簿管理\function.c(45,3): warning C4033: “ListDel”必须返回值
-E:\CLanguage\电话簿管理\电话簿管理\function.c(66,7): warning C4013: “gets”未定义；假设外部返回 int
-  main.c
-E:\CLanguage\电话簿管理\电话簿管理\main.c(9,7): warning C4013: “menu”未定义；假设外部返回 int
-  正在生成代码...
-E:\CLanguage\电话簿管理\电话簿管理\function.c(87): warning C4715: “ListDel”: 不是所有的控件路径都返回值
+E:\CLanguage\电话簿管理\电话簿管理\function.c(49,3): warning C4033: “ListDel”必须返回值
+E:\CLanguage\电话簿管理\电话簿管理\function.c(70,7): warning C4013: “gets”未定义；假设外部返回 int
+E:\CLanguage\电话簿管理\电话簿管理\function.c(91): warning C4715: “ListDel”: 不是所有的控件路径都返回值
+E:\CLanguage\电话簿管理\电话簿管理\function.c(204): warning C4716: “ListSort”: 必须返回一个值
   电话簿管理.vcxproj -> E:\CLanguage\电话簿管理\电话簿管理\Debug\电话簿管理.exe

@@ -12,11 +12,12 @@ int main() {
 		switch (n)
 		{
 		case 0:printf("程序即将退出"); break;
-		case 1:head = ListInsert(head); break;
+		case 1:head = ListInsert(head); break; 
 		case 2:ListPrint(head); break;
 		case 3:head = ListDel(head); break;
 		case 4:ListFind(head); break;
-		case 5:head = ListChange(head);
+		case 5:head = ListChange(head); break;
+		case 6:ListPrint(head); break;
 		default:printf("重新输入>>");
 			break;
 		}

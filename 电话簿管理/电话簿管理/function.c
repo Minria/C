@@ -3,10 +3,8 @@
 #include"book.h"
 
 
-void* ListCreat(struct PhoneBook* head) {
-	head = NULL;
-	return head;
-}
+
+
 void menu() {
 	printf("0.退出\n");
 	printf("1.添加\n");
@@ -14,6 +12,12 @@ void menu() {
 	printf("3.删除\n");
 	printf("4.查找\n");
 	printf("5.修改\n");
+	printf("6.排序\n");
+}
+
+void* ListCreat(struct PhoneBook* head) {
+	head = NULL;
+	return head;
 }
 void* ListInsert(struct PhoneBook* head) {
 	PhoneBook* p1 = NULL, *p2 = head;
@@ -95,13 +99,12 @@ void ListFindByName(struct PhoneBook* head){
 			count = 1;
 			printf("姓名>>%s\n", head->name);
 			printf("号码>>%s\n", head->telnum);
-			printf("------------------------");
-			head = head->next;
+			printf("------------------------\n");
 		}
+		head = head->next;
 	}
 	if (count == 0)
 		printf("没有该联系人");
-	return;
 }
 void ListFind(struct PhoneBook *head) {
 	printf("0.退出\n");
@@ -132,12 +135,11 @@ void ListFindByNum(struct PhoneBook* head) {
 			printf("姓名>>%s\n", head->name);
 			printf("号码>>%s\n", head->telnum);
 			printf("------------------------\n");
-			head = head->next;
 		}
+		head = head->next;
 	}
 	if (count == 0)
 		printf("没有该联系人");
-	return;
 }
 void* ListChange(struct PhoneBook* head) {
 	struct PhoneBook* p1 = head;
@@ -163,6 +165,42 @@ void* ListChange(struct PhoneBook* head) {
 	if (p1 == NULL)
 		printf("未查询到\n");
 	return head;
+}
+int ListLength(struct PhoneBook* head) {
+	int count = 0;
+	while (head) {
+		count++;
+		head = head->next;
+	}
+	return count;
+}
+void* ListSort(struct PhoneBook* head) {
+	int n = ListLength(head);
+	int i, j;
+	struct PhoneBook a[200] = { 0 }, * p = head, temp;
+	for (i = 0; i <n; i++)
+	{
+		strcpy(a[i].name, p->name);
+		strcpy(a[i].telnum, p->telnum);
+		p = p->next;
+	}
+	for (i = 1; i <= n - 1; i++)
+	{
+		for (j = 1; j <= n - i; j++)
+		{
+			if (strcmp(a[j].name, a[j + 1].name) > 0)
+			{
+				temp = a[j];
+				a[j] = a[j + 1];
+				a[j + 1] = temp;
+			}
+		}
+	}
+	for (i = 0; i < n; i++) {
+		printf("姓名>>%s\n", a[i].name);
+		printf("号码>>%s\n", a[i].telnum);
+		printf("------------------------");
+	}
 }
 void ListPrint(struct PhoneBook* head) {
 	while (head) {
