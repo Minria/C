@@ -1,4 +1,0 @@
-﻿  test.c
-E:\CLanguage\LeetCode\两数之和\test.c(21,55): warning C4047: “=”:“int”与“int *”的间接级别不同
-E:\CLanguage\LeetCode\两数之和\test.c(15): warning C4715: “twoSum”: 不是所有的控件路径都返回值
-  两数之和.vcxproj -> E:\CLanguage\LeetCode\两数之和\Debug\两数之和.exe
