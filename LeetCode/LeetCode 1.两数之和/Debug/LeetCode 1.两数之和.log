@@ -1,0 +1,4 @@
+﻿  test.c
+C:\Users\汪福明\source\repos\LeetCode 1.两数之和\test.c(26,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“int *”
+C:\Users\汪福明\source\repos\LeetCode 1.两数之和\test.c(26,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 2 拥有了类型“int *”
+  LeetCode 1.两数之和.vcxproj -> C:\Users\汪福明\source\repos\LeetCode 1.两数之和\Debug\LeetCode 1.两数之和.exe
