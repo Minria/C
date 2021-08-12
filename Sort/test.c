@@ -94,7 +94,6 @@ void SelectSort(int* nums, int numsSize) {
 		}
 	}
 }
-
 void MergeSort(int* nums, int numsSize) {
 	int mid = numsSize / 2;
 	int* arr = (int*)malloc(numsSize * sizeof(int));
