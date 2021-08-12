@@ -8,6 +8,8 @@ void menu() {
 	printf("**********5.  øÏÀŸ≈≈–Ú    *********\n");
 	printf("**********6.ºÚµ•—°‘Ò≈≈–Ú  *********\n");
 	printf("**********7.∂—≈≈–Ú        *********\n");
+	printf("**********8.πÈ≤¢≈≈–Ú      *********\n");
+	
 }
 int main() {
 	int nums[] = { 1,3,4,6,7,8,2,6,0,5 };
@@ -30,6 +32,7 @@ int main() {
 		break;
 	case 6:SelectSort(nums, 10);//ºÚµ•—°‘Ò≈≈–Ú
 		break;
+	case 8:MergeSort(nums, 10);
 	default:
 		break;
 	}

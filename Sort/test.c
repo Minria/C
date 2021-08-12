@@ -95,3 +95,20 @@ void SelectSort(int* nums, int numsSize) {
 	}
 }
 
+void MergeSort(int* nums, int numsSize) {
+	int mid = numsSize / 2;
+	int* arr = (int*)malloc(numsSize * sizeof(int));
+	QuickSort(nums, 0, mid);
+	QuickSort(nums, mid + 1, numsSize - 1);
+	int left = 0, right = mid + 1, k = 0;
+	while(left<=mid&&right<numsSize)
+		arr[k++] = nums[left] > nums[right] ? nums[right++] : nums[left++];
+	while (left <= mid)
+		arr[k++] = nums[left++];
+	while (right < numsSize)
+		arr[k++] = nums[right++];
+	for (int i = 0; i < numsSize; i++)
+		nums[i] = arr[i];
+	free(arr);
+}
+
