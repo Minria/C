@@ -32,3 +32,50 @@
 //    }
 //    return head;
 //}
+
+int ListLength(struct ListNode* head) {
+	int count = 0;
+	while (head) {
+		count++;
+		head = head->next;
+	}
+	return count;
+}
+struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2) {
+	int n1 = ListLength(l1);
+	int n2 = ListLength(l2);
+	struct ListNode* p1 = NULL, *p2 = NULL;
+	if (n1 >= n2) {
+		p1 = l1;
+		p2 = l2;
+	}
+	else {
+		p1 = l2;
+		p2 = l1;
+	}
+	int i = 0, plus = 0;
+	for (i = 0; i < n1; i++) {
+		p1->val = p1->val+p2 ->val + plus;
+		plus = p1->val > 9 ? 1 : 0;
+		if (plus == 1)
+			p1->val -= 10;
+		if (i == n1 - 1) {
+			if (plus == 1) {
+				p1->next = malloc(sizeof(struct ListNode));
+				p1->next->val = plus;
+				p1->next->next = NULL;
+			}
+			break;
+		}
+		p1 = p1->next;
+		if (i < n2 - 1)
+			p2 = p2->next;
+		else
+			p2->val = 0;
+
+	}
+	if (n1 >= n2)
+		return l1;
+	else
+		return l2;
+}
