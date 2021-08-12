@@ -1,0 +1,4 @@
+﻿  test.c
+E:\CS Code\C\BitClass\test归并排序\test.c(8,26): warning C4013: “malloc”未定义；假设外部返回 int
+E:\CS Code\C\BitClass\test归并排序\test.c(33,9): warning C4013: “free”未定义；假设外部返回 int
+  test归并排序.vcxproj -> E:\CS Code\C\BitClass\test归并排序\Debug\test归并排序.exe
