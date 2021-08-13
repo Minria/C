@@ -1,0 +1,3 @@
+﻿  test.c
+E:\CS Code\C\BitClass\Day1\test.c(32): warning C4715: “Find”: 不是所有的控件路径都返回值
+  Day1.vcxproj -> E:\CS Code\C\BitClass\Day1\Debug\Day1.exe
