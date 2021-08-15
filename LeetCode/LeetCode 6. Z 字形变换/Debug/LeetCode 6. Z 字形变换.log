@@ -1,3 +1,0 @@
-﻿  test.c
-E:\CS Code\C\LeetCode\LeetCode 6. Z 字形变换\test.c(23): warning C4172: 返回局部变量或临时变量的地址: str
-  LeetCode 6. Z 字形变换.vcxproj -> E:\CS Code\C\LeetCode\LeetCode 6. Z 字形变换\Debug\LeetCode 6. Z 字形变换.exe
