@@ -3,7 +3,6 @@
 #include<string.h>
 #include<malloc.h>
 
-
 //int main() {
 // 
 //	int b=++(a++);
@@ -94,3 +93,67 @@
 //		}
 //	}
 //}
+
+
+//int main() {
+//	int m = 0, n = 0;
+//	for (m = 0, n = -1; n == 0; m++, n++)
+//		n++;
+//	return 0;
+//}
+void QuickSort(int* nums, int left, int right) {
+	if (left >=right)
+		return;
+	int temp = nums[left];
+	int i = left, j = right;
+	while (i < j) {
+		while (i <= j && nums[j] >= temp)
+			--j;
+		nums[i] = nums[j];
+		while (i <= j && nums[i] <= temp)
+			++i;
+		nums[j] = nums[i];
+	}
+	nums[i] = temp;
+	QuickSort(nums, left, i);
+	QuickSort(nums, i + 1, right);
+}
+// 
+// 
+//void quick_sort(int* nums, int l, int r) {
+//if (l + 1 >= r) {
+//	return;
+//}
+//int first = l, last = r - 1, key = nums[first];
+//while (first < last) {
+//	while (first < last && nums[last] >= key) {
+//		--last;
+//	}
+//	nums[first] = nums[last];
+//	while (first < last && nums[first] <= key) {
+//		++first;
+//	}
+//	nums[last] = nums[first];
+//}
+//nums[first] = key;
+//quick_sort(nums, l, first);
+//quick_sort(nums, first + 1, r);
+//}
+//int* MinFirstK(int* nums, int numsSize,int k) {
+//	int* arr = (int*)malloc(k * sizeof(int));
+//	QuickSort(nums, 0, numsSize-1);
+//	for (int i = 0; i < k; ++i)
+//		arr[i] = nums[i];
+//	return arr;
+//}
+
+int main() {
+	int nums[] = { 1,2,3,4,6,7,9,5 };
+	int size = sizeof(nums) / sizeof(nums[0]);
+	int k = 5;
+	QuickSort(nums,0,size);
+	//int *arr = MinFirstK(nums,size,5);
+	for (int i = 0; i < k; ++i)
+		printf("%d ", nums[i]);
+	return 0;
+}
