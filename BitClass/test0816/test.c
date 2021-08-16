@@ -38,4 +38,59 @@
 //		inc();
 //	return 0;
 //}
+// 
+// 
+//void PreOrder(BiTree T) {
+//	if (T) {
+//		visit(T);
+//		PreOrder(T->lchild);
+//		PreOrder(T->rchild);
+//	}
+//}
+//
+//void InOrder(BiTree T) {
+//	if (T) {
+//		Inorder(T->lchild);
+//		Visit(T);
+//		Inorder(T->rchild);
+//	}
+//}
+//void PostOrder(BiTree T) {
+//	if (T) {
+//		PostOrder(T->lchild);
+//		PostOrder(T->rchild);
+//		visit(T);
+//	}
+//}
 
+//void InOrder(BiTree T) {
+//	InitStack(S);
+//	BiTree p = T;
+//	while (p || !IsEmpty(S)) {
+//		if (p) {
+//			Push(S, p);
+//			p->lchild;
+//		}
+//		else {
+//			Pop(S, p);
+//			visit(p);
+//			p->rchild;
+//		}
+//	}
+//}
+
+//void PreOrder(BiTree T) {
+//	InitStack(S);
+//	BiTree p = T;
+//	while (p || !IsEmpty(S)) {
+//		if (p) {
+//			visit(p);
+//			Push(S, p);
+//			p->lchild;
+//		}
+//		else {
+//			Pop(S, p);
+//			p->rchild;
+//		}
+//	}
+//}
