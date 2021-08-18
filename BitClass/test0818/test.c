@@ -104,3 +104,29 @@
 //	printf("%d %d", arr[0], arr[1]);
 //	return 0;
 //}
+
+//int find(int nums[][4], int cow1, int col1, int cow2, int col2,int target) {
+//	if (cow1 > cow2 || col1 > col2)
+//		return;
+//	if (cow1 <= cow2 && col1 <= col2) {
+//		int midcow = (cow1 + cow2) / 2;
+//		int midcol = (col1 + col2) / 2;
+//		if (nums[midcow][midcol] == target)
+//			return 1;
+//		else if (nums[midcow][midcol] > target) {
+//			find(nums, cow1, col1, midcow - 1, midcol, target);
+//			find(nums, cow1, col1, midcow, midcol - 1, target);
+//		}
+//		else {
+//			find(nums, midcow +1, midcol, cow2, col2, target);
+//			find(nums, midcow, midcol+1, cow2, col2, target);
+//		}
+//	}
+//}
+//int main() {
+//	int nums[4][4] = { {1,2,8,9},{2,4,9,12},{4,7,10,13},{6,8,11,15} };
+//	int ret = find(nums, 0, 0, 3, 3, );
+//	printf("%d", ret);
+//	return 0;
+//
+//}
