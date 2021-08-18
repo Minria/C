@@ -1,0 +1,3 @@
+﻿  test.c
+E:\CS Code\C\BitClass\test0818\test.c(99): warning C4716: “findonce”: 必须返回一个值
+  test0818.vcxproj -> E:\CS Code\C\BitClass\test0818\Debug\test0818.exe
