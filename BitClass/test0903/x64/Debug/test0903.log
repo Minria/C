@@ -1,24 +1,16 @@
 ﻿  test.c
-E:\Github\C\BitClass\test0903\test.c(67,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
-E:\Github\C\BitClass\test0903\test.c(67,9): message : 请考虑在格式字符串中使用“%zd”
-E:\Github\C\BitClass\test0903\test.c(68,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
-E:\Github\C\BitClass\test0903\test.c(68,9): message : 请考虑在格式字符串中使用“%zd”
-E:\Github\C\BitClass\test0903\test.c(69,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
-E:\Github\C\BitClass\test0903\test.c(69,9): message : 请考虑在格式字符串中使用“%zd”
-E:\Github\C\BitClass\test0903\test.c(70,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
-E:\Github\C\BitClass\test0903\test.c(70,9): message : 请考虑在格式字符串中使用“%zd”
-E:\Github\C\BitClass\test0903\test.c(71,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
-E:\Github\C\BitClass\test0903\test.c(71,9): message : 请考虑在格式字符串中使用“%zd”
-E:\Github\C\BitClass\test0903\test.c(72,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
-E:\Github\C\BitClass\test0903\test.c(72,9): message : 请考虑在格式字符串中使用“%zd”
-E:\Github\C\BitClass\test0903\test.c(73,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
-E:\Github\C\BitClass\test0903\test.c(73,9): message : 请考虑在格式字符串中使用“%zd”
-E:\Github\C\BitClass\test0903\test.c(74,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
-E:\Github\C\BitClass\test0903\test.c(74,9): message : 请考虑在格式字符串中使用“%zd”
-E:\Github\C\BitClass\test0903\test.c(75,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
-E:\Github\C\BitClass\test0903\test.c(75,9): message : 请考虑在格式字符串中使用“%zd”
-E:\Github\C\BitClass\test0903\test.c(76,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
-E:\Github\C\BitClass\test0903\test.c(76,9): message : 请考虑在格式字符串中使用“%zd”
-E:\Github\C\BitClass\test0903\test.c(77,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
-E:\Github\C\BitClass\test0903\test.c(77,9): message : 请考虑在格式字符串中使用“%zd”
+E:\Github\C\BitClass\test0903\test.c(5,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+E:\Github\C\BitClass\test0903\test.c(5,9): message : 请考虑在格式字符串中使用“%zd”
+E:\Github\C\BitClass\test0903\test.c(6,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+E:\Github\C\BitClass\test0903\test.c(6,9): message : 请考虑在格式字符串中使用“%zd”
+E:\Github\C\BitClass\test0903\test.c(7,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+E:\Github\C\BitClass\test0903\test.c(7,9): message : 请考虑在格式字符串中使用“%zd”
+E:\Github\C\BitClass\test0903\test.c(8,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+E:\Github\C\BitClass\test0903\test.c(8,9): message : 请考虑在格式字符串中使用“%zd”
+E:\Github\C\BitClass\test0903\test.c(9,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+E:\Github\C\BitClass\test0903\test.c(9,9): message : 请考虑在格式字符串中使用“%zd”
+E:\Github\C\BitClass\test0903\test.c(10,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+E:\Github\C\BitClass\test0903\test.c(10,9): message : 请考虑在格式字符串中使用“%zd”
+E:\Github\C\BitClass\test0903\test.c(11,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+E:\Github\C\BitClass\test0903\test.c(11,9): message : 请考虑在格式字符串中使用“%zd”
   test0903.vcxproj -> E:\Github\C\BitClass\test0903\x64\Debug\test0903.exe

@@ -1,3 +1,6 @@
 ﻿  test.c
-MSVCRTD.lib(exe_main.obj) : error LNK2019: 无法解析的外部符号 _main，函数 "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ) 中引用了该符号
-E:\Github\C\BitClass\test0903\Debug\test0903.exe : fatal error LNK1120: 1 个无法解析的外部命令
+E:\Github\C\BitClass\test0903\test.c(17,28): warning C4047: “函数”:“const char *”与“char (*)[6]”的间接级别不同
+E:\Github\C\BitClass\test0903\test.c(17,24): warning C4024: “strlen”: 形参和实参 1 的类型不同
+E:\Github\C\BitClass\test0903\test.c(18,32): warning C4047: “函数”:“const char *”与“char (*)[6]”的间接级别不同
+E:\Github\C\BitClass\test0903\test.c(18,29): warning C4024: “strlen”: 形参和实参 1 的类型不同
+  test0903.vcxproj -> E:\Github\C\BitClass\test0903\Debug\test0903.exe

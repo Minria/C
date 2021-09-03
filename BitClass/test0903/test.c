@@ -1,24 +1,24 @@
 #include<stdio.h>
 #include<string.h>
-//int main() {
-//	char arr[] = { 'a','b','c','d','e','f' };
-//	printf("%d\n", sizeof(arr));//6
-//	printf("%d\n", sizeof(arr + 0));//4/8
-//	printf("%d\n", sizeof(*arr));//1
-//	printf("%d\n", sizeof(arr[1]));//1
-//	printf("%d\n", sizeof(&arr));//4/8
-//	printf("%d\n", sizeof(&arr + 1));//4/8
-//	printf("%d\n", sizeof(&arr[0] + 1));//4/8
-//	strlen函数输入地址，找到0为止
-//	printf("%d\n", strlen(arr));//随机值b
-//	printf("%d\n", strlen(arr + 0));//随机值b
-//	printf("%d\n", strlen(*arr));//错误
-//	printf("%d\n", strlen(arr[1]));//错误
-//	printf("%d\n", strlen(&arr));//随机值b
-//	printf("%d\n", strlen(&arr + 1));//随机值b-6
-//	printf("%d\n", strlen(&arr[0] + 1));//随机值b-1
-//	return 0;
-//}
+int main() {
+	char arr[] = { 'a','b','c','d','e','f' };
+	//printf("%d\n", sizeof(arr));//6
+	//printf("%d\n", sizeof(arr + 0));//4/8
+	//printf("%d\n", sizeof(*arr));//1
+	//printf("%d\n", sizeof(arr[1]));//1
+	//printf("%d\n", sizeof(&arr));//4/8
+	//printf("%d\n", sizeof(&arr + 1));//4/8
+	//printf("%d\n", sizeof(&arr[0] + 1));//4/8
+	//strlen函数输入地址，找到0为止
+	//printf("%d\n", strlen(arr));//随机值b
+	//printf("%d\n", strlen(arr + 0));//随机值b
+	////printf("%d\n", strlen(*arr));//错误
+	////printf("%d\n", strlen(arr[1]));//错误
+	//printf("%d\n", strlen(&arr));//随机值b
+	//printf("%d\n", strlen(&arr + 1));//随机值b-6
+	//printf("%d\n", strlen(&arr[0] + 1));//随机值b-1
+	//return 0;
+}
 
 
 
