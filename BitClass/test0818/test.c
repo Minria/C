@@ -140,21 +140,21 @@
 //	}
 //	return false;
 //}
-//int find(int* nums, int m, int n, int key){//m行n列，找到返回1，否则返回0
-//	if (nums == NULL || m < 1 || n < 1)
-//		return 0;
-//	int row = 0;
-//	int col = n - 1;
-//	while (row <= m - 1 && col >= 0){
-//		if (nums[row * n + col] == key)
-//			return 1;
-//		else if (nums[row * n + col] > key)
-//			col--;
-//		else
-//			row++;
-//	}
-//	return 0;
-//}
+int find(int* nums, int m, int n, int key){//m行n列，找到返回1，否则返回0
+	if (nums == NULL || m < 1 || n < 1)
+		return 0;
+	int row = 0;
+	int col = n - 1;
+	while (row <= m - 1 && col >= 0){
+		if (nums[row * n + col] == key)
+			return 1;
+		else if (nums[row * n + col] > key)
+			col--;
+		else
+			row++;
+	}
+	return 0;
+}
 int main() {
 	int nums[4][4] = { {1,2,8,9},{2,4,9,12},{4,7,10,13},{6,8,11,15} };
 	int ret = find(nums,4,4,8);

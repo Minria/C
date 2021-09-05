@@ -30,3 +30,6 @@ int main() {
 	printf("%s", change(s));
 	return 0;
 }
+
+
+

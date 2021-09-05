@@ -1,0 +1,6 @@
+﻿  test.c
+E:\Github\C\BitClass\test0810\test.c(70,12): warning C4047: “函数”:“int (*)[10]”与“int [10]”的间接级别不同
+E:\Github\C\BitClass\test0810\test.c(70,9): warning C4024: “print1”: 形参和实参 1 的类型不同
+E:\Github\C\BitClass\test0810\test.c(72,14): warning C4048: “int (*)[5]”和“int (*)[3][5]”数组的下标不同
+E:\Github\C\BitClass\test0810\test.c(74,1): warning C4048: “int (*)[5]”和“int (*)[3][5]”数组的下标不同
+  test0810.vcxproj -> E:\Github\C\BitClass\test0810\Debug\test0810.exe

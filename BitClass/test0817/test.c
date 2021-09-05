@@ -182,28 +182,28 @@
 
 
 
-//void delspace(char* s) {
-//	char* slow = s, * fast = s;
-//	int count = 0;
-//	while (*fast) {
-//		while (*fast && *fast == ' ')
-//			++fast;
-//		if (*fast == 0)
-//			break;
-//		if (count == 1)
-//			*slow++ = ' ';
-//		while (*fast != ' ' && *fast)
-//			*slow++ = *fast++;
-//		count = 1;
-//		if (*fast == 0)
-//			break;
-//	}
-//	*slow = 0;
-//}
-//int main() {
-//	char s[] = "   abc   sdd s   ";
-//	delspace(s);
-//	printf("%s", s);
-//	return 0;
-//}
+void delspace(char* s) {
+	char* slow = s, * fast = s;
+	int count = 0;
+	while (*fast) {
+		while (*fast && *fast == ' ')
+			++fast;
+		if (*fast == 0)
+			break;
+		if (count == 1)
+			*slow++ = ' ';
+		while (*fast != ' ' && *fast)
+			*slow++ = *fast++;
+		count = 1;
+		if (*fast == 0)
+			break;
+	}
+	*slow = 0;
+}
+int main() {
+	char s[] = "   abc   sdd s   ";
+	delspace(s);
+	printf("%s", s);
+	return 0;
+}
 

@@ -19,23 +19,23 @@
 //}
 
 
-//int main() {
-//	char ch = 0;
-//	char str[10] ="aeiouAEIOU";
-//	while ((ch = getchar()) != -1) {
-//		int flag = 0;
-//		int i = 0;
-//		for (i = 0; i < 10; i++) {
-//			if (ch == str[i]) {
-//				flag = 1;
-//				break;
-//			}
-//		}
-//		if (flag == 1)
-//			printf("1\n");
-//		else
-//			printf("0\n");
-//		getchar();
-//	}
-//	return 0;
-//}
+int main() {
+	char ch = 0;
+	char str[10] ="aeiouAEIOU";
+	while ((ch = getchar()) != -1) {
+		int flag = 0;
+		int i = 0;
+		for (i = 0; i < 10; i++) {
+			if (ch == str[i]) {
+				flag = 1;
+				break;
+			}
+		}
+		if (flag == 1)
+			printf("1\n");
+		else
+			printf("0\n");
+		getchar();
+	}
+	return 0;
+}

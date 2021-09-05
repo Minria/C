@@ -24,17 +24,17 @@
 //	return 0;
 //}
 
-//unsigned long g_ulGlobal = 0;
-//void GlobalInit(unsigned long ulArg) {
-//	ulArg = 0x01;
-//	return;
-//}
-//void test() {
-//	GlobalInit(g_ulGlobal);
-//	printf("%lu", g_ulGlobal);
-//	return;
-//}
-//int main() {
-//	test();
-//	return 0;
-//}
+unsigned long g_ulGlobal = 0;
+void GlobalInit(unsigned long ulArg) {
+	ulArg = 0x01;
+	return;
+}
+void test() {
+	GlobalInit(g_ulGlobal);
+	printf("%lu", g_ulGlobal);
+	return;
+}
+int main() {
+	test();
+	return 0;
+}
