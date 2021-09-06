@@ -1,0 +1,4 @@
+﻿  test.c
+E:\Github\C\BitClass\test0906\test.c(24,66): warning C4013: “gets”未定义；假设外部返回 int
+E:\Github\C\BitClass\test0906\test.c(274,7): warning C4101: “name”: 未引用的局部变量
+  test0906.vcxproj -> E:\Github\C\BitClass\test0906\x64\Debug\test0906.exe
