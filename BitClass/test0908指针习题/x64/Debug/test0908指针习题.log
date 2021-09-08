@@ -1,0 +1,24 @@
+﻿  test.c
+E:\Github\C\BitClass\test0908指针习题\test.c(92,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+E:\Github\C\BitClass\test0908指针习题\test.c(92,9): message : 请考虑在格式字符串中使用“%zd”
+E:\Github\C\BitClass\test0908指针习题\test.c(93,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+E:\Github\C\BitClass\test0908指针习题\test.c(93,9): message : 请考虑在格式字符串中使用“%zd”
+E:\Github\C\BitClass\test0908指针习题\test.c(94,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+E:\Github\C\BitClass\test0908指针习题\test.c(94,9): message : 请考虑在格式字符串中使用“%zd”
+E:\Github\C\BitClass\test0908指针习题\test.c(95,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+E:\Github\C\BitClass\test0908指针习题\test.c(95,9): message : 请考虑在格式字符串中使用“%zd”
+E:\Github\C\BitClass\test0908指针习题\test.c(96,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+E:\Github\C\BitClass\test0908指针习题\test.c(96,9): message : 请考虑在格式字符串中使用“%zd”
+E:\Github\C\BitClass\test0908指针习题\test.c(97,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+E:\Github\C\BitClass\test0908指针习题\test.c(97,9): message : 请考虑在格式字符串中使用“%zd”
+E:\Github\C\BitClass\test0908指针习题\test.c(98,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+E:\Github\C\BitClass\test0908指针习题\test.c(98,9): message : 请考虑在格式字符串中使用“%zd”
+E:\Github\C\BitClass\test0908指针习题\test.c(99,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+E:\Github\C\BitClass\test0908指针习题\test.c(99,9): message : 请考虑在格式字符串中使用“%zd”
+E:\Github\C\BitClass\test0908指针习题\test.c(100,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+E:\Github\C\BitClass\test0908指针习题\test.c(100,9): message : 请考虑在格式字符串中使用“%zd”
+E:\Github\C\BitClass\test0908指针习题\test.c(101,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+E:\Github\C\BitClass\test0908指针习题\test.c(101,9): message : 请考虑在格式字符串中使用“%zd”
+E:\Github\C\BitClass\test0908指针习题\test.c(102,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+E:\Github\C\BitClass\test0908指针习题\test.c(102,9): message : 请考虑在格式字符串中使用“%zd”
+  test0908指针习题.vcxproj -> E:\Github\C\BitClass\test0908指针习题\x64\Debug\test0908指针习题.exe

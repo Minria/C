@@ -1,0 +1,4 @@
+﻿  test.c
+E:\Github\C\BitClass\test0908指针习题\test.c(154,7): warning C4048: “int (*)[4]”和“int (*)[5]”数组的下标不同
+E:\Github\C\BitClass\test0908指针习题\test.c(155,9): warning C4477: “printf”: 格式字符串“%p”需要类型“void *”的参数，但可变参数 1 拥有了类型“int”
+  test0908指针习题.vcxproj -> E:\Github\C\BitClass\test0908指针习题\Debug\test0908指针习题.exe
