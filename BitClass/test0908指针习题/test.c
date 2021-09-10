@@ -107,8 +107,8 @@
 
 //int main(){
 //	int a[5] = { 1, 2, 3, 4, 5 };
-//	int* ptr1 = (int*)(&a + 1);
-//	printf("%d,%d", *(a + 1), *(ptr1 - 1));
+//	int* ptr = (int*)(&a + 1);
+//	printf("%d,%d", *(a + 1), *(ptr- 1));
 //	return 0;
 //}
 //元素名代表首元素地址，a+1代表第二个元素地址，解引用得到第二个元素的值
@@ -129,13 +129,13 @@
 //	return 0;
 //}
 
-//int main(){
-//	int a[4] = { 1, 2, 3, 4 };
-//	int* ptr1 = (int*)(&a + 1);
-//	int* ptr2 = (int*)((int)a + 1);
-//	printf("%x,%x", ptr1[-1], *ptr2);
-//	return 0;
-//}
+int main(){
+	int a[4] = { 1, 2, 3, 4 };
+	int* ptr1 = (int*)(&a + 1);
+	int* ptr2 = (int*)((int)a + 1);
+	printf("%x,%x", ptr1[-1], *ptr2);
+	return 0;
+}
 //第一个不在说明
 //第二个要考虑大小端问题
 
@@ -175,13 +175,13 @@
 
 
 
-int main(){
-	char* a[] = { "work","at","alibaba" };
-	char** pa = a;
-	pa++;
-	printf("%s\n", *pa);
-	return 0;
-}
+//int main(){
+//	char* a[] = { "work","at","alibaba" };
+//	char** pa = a;
+//	pa++;
+//	printf("%s\n", *pa);
+//	return 0;
+//}
 //指针数组，数组里面存放的是指针
 //pa指向数组第一个元素，自增运算后指向第二个元素
 //解引用就是第二个指针

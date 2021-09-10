@@ -1,2 +1,4 @@
 ﻿  test.c
+E:\Github\C\BitClass\test0909\test.c(23,3): warning C4033: “MyStrcpy”必须返回值
+E:\Github\C\BitClass\test0909\test.c(27): warning C4716: “MyStrcpy”: 必须返回一个值
   test0909.vcxproj -> E:\Github\C\BitClass\test0909\Debug\test0909.exe
