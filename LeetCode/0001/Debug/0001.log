@@ -1,0 +1,4 @@
+﻿  test.c
+E:\Github\C\LeetCode\0001\test.c(11,22): warning C4013: “malloc”未定义；假设外部返回 int
+E:\Github\C\LeetCode\0001\test.c(11,1): warning C4047: “初始化”:“int *”与“int”的间接级别不同
+  0001.vcxproj -> E:\Github\C\LeetCode\0001\Debug\0001.exe
