@@ -4,10 +4,11 @@
 #include<math.h>
 
 void* my_memcpy(void* str1, const void* str2, size_t n) {
+	void* p = str1;
 	while (n--) {
 		*((char*)str1 + n) = *((char*)str2 + n);
 	}
-	return str1;
+	return p;
 }
 int main() {
 	char str1[] = "abcdefg";
