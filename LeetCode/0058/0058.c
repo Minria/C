@@ -17,6 +17,6 @@ int lengthOfLastWord(char* s) {
     return num;
 }
 int main() {
-    char s[] = " a";
+    char s[] = "aa";
     printf("%d", lengthOfLastWord(s));
 }
