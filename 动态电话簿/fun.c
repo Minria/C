@@ -18,11 +18,11 @@ void AddContact(struct Contact* pc)
 	if (pc->sz == pc->capacity)
 	{
 		//增加容量
-		struct PeoInfo* ptr = (struct PeoInfo*)realloc(pc->data, (pc->capacity + 2) * sizeof(struct PeoInfo));
+		struct PeoInfo* ptr = (struct PeoInfo*)realloc(pc->data, (pc->capacity + 1) * sizeof(struct PeoInfo));
 		if (ptr != NULL)
 		{
 			pc->data = ptr;
-			pc->capacity += 2;
+			pc->capacity += 1;
 
 			printf("增容成功\n");
 		}

@@ -28,8 +28,7 @@ int main()
 	struct Contact con;
 	//初始化通讯录
 	InitContact(&con);
-	//最多可以放3个人的信息了
-	//空间不够可以增容
+
 
 	do
 	{
