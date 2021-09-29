@@ -1,0 +1,6 @@
+﻿  test.c
+E:\Github\C\BitClass\test0929\test.c(85,15): warning C4047: “函数”:“const char *”与“FILE *(__cdecl *)(const char *,const char *)”的间接级别不同
+E:\Github\C\BitClass\test0929\test.c(85,10): warning C4024: “perror”: 形参和实参 1 的类型不同
+E:\Github\C\BitClass\test0929\test.c(88,13): warning C4477: “fscanf”: 格式字符串“%f”需要类型“float *”的参数，但可变参数 2 拥有了类型“double *”
+E:\Github\C\BitClass\test0929\test.c(88,13): message : 请考虑在格式字符串中使用“%lf”
+  test0929.vcxproj -> E:\Github\C\BitClass\test0929\Debug\test0929.exe
