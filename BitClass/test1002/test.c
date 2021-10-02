@@ -99,12 +99,29 @@
 //	return 0;
 //}
 
-int main() {
-	struct node {
-		int a;
-		int data[10];
-		char i;
-	}s;
-	printf("%d", sizeof(s));
-	return 0;
-}
+//int main() {
+//	struct node {
+//		int a;
+//		int data[10];
+//		char i;
+//	}s;
+//	printf("%d", sizeof(s));
+//	return 0;
+//}
+
+
+//#define MaxSize 50 
+//typedef struct{
+//	ElemType data[MaxSize];
+//	int length;
+//}SqList;
+//
+//LinkList ListTailInsert(LinkList &L) {
+//    int x;
+//    L = (LinkList)malloc(sizeof(LNode));
+//    LNode* s, * r = L;
+//    scanf("%d", &x);
+//    while (x != 9999) {
+//
+//    }
+//}
