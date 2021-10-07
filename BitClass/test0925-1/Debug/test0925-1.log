@@ -1,3 +1,0 @@
-﻿  test.c
-E:\Github\C\BitClass\test0925-1\test.c(8): warning C4172: 返回局部变量或临时变量的地址: n
-  test0925-1.vcxproj -> E:\Github\C\BitClass\test0925-1\Debug\test0925-1.exe

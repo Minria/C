@@ -1,6 +1,0 @@
-﻿  test.c
-E:\Github\C\BitClass\test0823\test.c(13,12): warning C4047: “return”:“int *”与“int”的间接级别不同
-E:\Github\C\BitClass\test0823\test.c(24,24): warning C4047: “函数”:“int *”与“int [4][4]”的间接级别不同
-E:\Github\C\BitClass\test0823\test.c(24,20): warning C4024: “find”: 形参和实参 1 的类型不同
-E:\Github\C\BitClass\test0823\test.c(24,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“int *”
-  test0823.vcxproj -> E:\Github\C\BitClass\test0823\Debug\test0823.exe

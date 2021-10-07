@@ -1,2 +1,0 @@
-E:\CS Code\C\BitClass\test0818\Debug\test0818.exe
-E:\Github\C\BitClass\test0818\Debug\test0818.exe

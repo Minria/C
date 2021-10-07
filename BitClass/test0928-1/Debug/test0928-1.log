@@ -1,6 +1,0 @@
-﻿  test.c
-E:\Github\C\BitClass\test0928-1\test.c(109,15): warning C4047: “函数”:“const char *”与“FILE *(__cdecl *)(const char *,const char *)”的间接级别不同
-E:\Github\C\BitClass\test0928-1\test.c(109,10): warning C4024: “perror”: 形参和实参 1 的类型不同
-E:\Github\C\BitClass\test0928-1\test.c(121,15): warning C4047: “函数”:“const char *”与“FILE *(__cdecl *)(const char *,const char *)”的间接级别不同
-E:\Github\C\BitClass\test0928-1\test.c(121,10): warning C4024: “perror”: 形参和实参 1 的类型不同
-  test0928-1.vcxproj -> E:\Github\C\BitClass\test0928-1\Debug\test0928-1.exe

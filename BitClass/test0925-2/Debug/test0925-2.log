@@ -1,8 +1,0 @@
-﻿  test.c
-E:\Github\C\BitClass\test0925-2\test.c(50,9): warning C4047: “函数”:“int”与“int *”的间接级别不同
-E:\Github\C\BitClass\test0925-2\test.c(50,7): warning C4024: “swap”: 形参和实参 1 的类型不同
-E:\Github\C\BitClass\test0925-2\test.c(50,13): warning C4047: “函数”:“int”与“int *”的间接级别不同
-E:\Github\C\BitClass\test0925-2\test.c(50,11): warning C4024: “swap”: 形参和实参 2 的类型不同
-E:\Github\C\BitClass\test0925-2\test.c(54,16): warning C4028: 形参 1 与声明不同
-E:\Github\C\BitClass\test0925-2\test.c(54,24): warning C4028: 形参 2 与声明不同
-  test0925-2.vcxproj -> E:\Github\C\BitClass\test0925-2\Debug\test0925-2.exe
