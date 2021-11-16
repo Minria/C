@@ -12,12 +12,12 @@ typedef struct Node {
 	int maxSize;
 }Node;
 
-void display(Node list);
-int getSize(Node list);
-void add(Node* list, int pos, int data,int* len);
-bool isFull(Node list);
-bool contains(Node list, int toFind);
-int search(Node list, int toFind);
-int getPos(Node list, int pos);
+void display(Node* list);
+int getSize(Node* list);
+void add(Node* list, int pos, int data);
+bool isFull(Node* list);
+bool contains(Node* list, int toFind);
+int search(Node* list, int toFind);
+int getPos(Node* list, int pos);
 void del(Node* list,int toRemove);
-void clear(Node list);
+void clear(Node* list);

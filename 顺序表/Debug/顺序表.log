@@ -1,5 +1,2 @@
 ﻿  fun.c
-E:\Github\C\顺序表\fun.c(13,15): warning C4028: 形参 1 与声明不同
-E:\Github\C\顺序表\fun.c(13,40): warning C4029: 声明的形参表不同于定义
-E:\Github\C\顺序表\fun.c(60,15): warning C4028: 形参 1 与声明不同
   顺序表.vcxproj -> E:\Github\C\顺序表\Debug\顺序表.exe

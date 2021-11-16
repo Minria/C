@@ -1,4 +1,7 @@
 #include"head.h"
+
+
+
 int main() {
 	Node list;
 	list.data = (int*)malloc(4 * MAXSIZE);
@@ -17,9 +20,12 @@ int main() {
 			scanf("%d", &pos);
 			printf("ÔªËØÖµ>>");
 			scanf("%d", &data);
-			add(&list, pos, data,&list.usedSize);
+			add(&list, pos, data);
 			break;
-		case 2:display(list);
+		case 2:display(&list);
+			break;
+		case 3:
+			printf("%d", getSize(&list));
 			break;
 		default:
 			break;
