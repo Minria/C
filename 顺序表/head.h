@@ -21,3 +21,4 @@ int search(Node* list, int toFind);
 int getPos(Node* list, int pos);
 void del(Node* list,int toRemove);
 void clear(Node* list);
+void menu();

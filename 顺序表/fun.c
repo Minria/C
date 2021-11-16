@@ -1,6 +1,13 @@
 #include"head.h"
 
-
+void menu() {
+	printf("------1.添加元素-------------\n");
+	printf("------2.删除元素-------------\n");
+	printf("------3.打印元素-------------\n");
+	printf("------4.获取线性表长度-------\n");
+	printf("------5.查找元素-------------\n");
+	printf("------6.清空线性表-----------\n");
+}
 void display(Node* list) {
 	for (int i = 0; i < list->usedSize; i++)
 		printf("%d ", list->data[i]);
@@ -12,13 +19,13 @@ int getSize(Node* list) {
 }
 void add(Node *list, int pos, int data) {
 	if (pos<0 || pos>list->usedSize) {
-		printf("输入位置不合法");
+		printf("输入位置不合法\n");
 		return;
 	}
 	if (isFull) {
 		int* p = (int*)realloc(list->data, list->maxSize + 10);
 		if (p == NULL) {
-			printf("顺序表满且扩容失败");
+			printf("顺序表满且扩容失败\n");
 			return;
 		}
 		list->data = p;
@@ -61,7 +68,7 @@ int getPos(Node* list, int pos) {
 void del(Node* list, int toRemove) {
 	int n = search(list, toRemove);
 	if (n < 0) {
-		printf("元素不存在");
+		printf("元素不存在\n");
 		return;
 	}
 	for (int i = n; i < list->usedSize-1; i++) {
@@ -71,5 +78,5 @@ void del(Node* list, int toRemove) {
 }
 void clear(Node* list) {
 	list->usedSize = 0;
-	printf("成功清除");
+	printf("成功清除\n");
 }
