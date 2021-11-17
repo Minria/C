@@ -6,3 +6,4 @@
 
 
 void insertSort(int* nums, int numsSize);
+void halfInsertSort(int* nums, int numsSize);
