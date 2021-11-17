@@ -6,7 +6,7 @@ int main() {
 	Node list;
 	list.data = (int*)malloc(4 * MAXSIZE);
 	list.usedSize = 0;
-	list.maxSize = 100;
+	list.maxSize = 10;
 	while (1) {
 		int n = 0;
 		menu();

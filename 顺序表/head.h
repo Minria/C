@@ -5,7 +5,7 @@
 #include <stdbool.h> 
 #include<stdlib.h>
 
-#define MAXSIZE 100
+#define MAXSIZE 10
 typedef struct Node {
 	int* data;
 	int usedSize;

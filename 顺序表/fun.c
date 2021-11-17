@@ -22,12 +22,13 @@ void add(Node *list, int pos, int data) {
 		printf("输入位置不合法\n");
 		return;
 	}
-	if (isFull) {
+	if (isFull(list)) {
 		int* p = (int*)realloc(list->data, list->maxSize + 10);
 		if (p == NULL) {
 			printf("顺序表满且扩容失败\n");
 			return;
 		}
+		printf("顺序表扩容成功\n初始空间%d\n当前空间%d\n", 10, list->maxSize + 10);
 		list->data = p;
 		p = NULL;
 		list->maxSize += 10;
@@ -37,6 +38,7 @@ void add(Node *list, int pos, int data) {
 	}
 	list->data[pos] = data;
 	list->usedSize++;
+	printf("添加成功");
 }
 bool isFull(Node* list) {
 	if (list->usedSize == list->maxSize) {
@@ -52,6 +54,7 @@ bool contains(Node* list, int toFind) {
 			return true;
 		}
 	}
+	printf("元素不存在");
 	return false;
 }
 int search(Node* list, int toFind) {
@@ -60,10 +63,18 @@ int search(Node* list, int toFind) {
 			return i;
 		}
 	}
+	printf("查找失败");
 	return -1;
 }
 int getPos(Node* list, int pos) {
-	return list->data[pos];
+	if (pos < 0 || pos >= list->usedSize) {
+		printf("输入位置不合法,返回值-1");
+		return -1;
+	}
+	else {
+		printf("找到了");
+		return list->data[pos];
+	}
 }
 void del(Node* list, int toRemove) {
 	int n = search(list, toRemove);
@@ -75,6 +86,7 @@ void del(Node* list, int toRemove) {
 		list->data[i] = list->data[i + 1];
 	}
 	list->usedSize--;
+	printf("删除成功");
 }
 void clear(Node* list) {
 	list->usedSize = 0;
