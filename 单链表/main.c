@@ -21,6 +21,8 @@ int main() {
 			scanf("%d", &val);
 			del(head, val);
 			break;
+		case 5:head = reverse(head);
+			break;
 		case 0:flag = 0;
 			break;
 		}

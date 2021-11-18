@@ -2,9 +2,9 @@
 
 
 void menu() {
-	printf("*******1.头插法*********\n");
-	printf("*******2.尾插法*********\n");
-	printf("*******3.打印插法*******\n");
+	printf("                       *******1.头插法*********\n");
+	printf("                       *******2.尾插法*********\n");
+	printf("                       *******3.打印插法*******\n");
 }
 LNode* addHead(LNode* head) {
 	LNode* p = (LNode*)malloc(sizeof(LNode));
@@ -62,4 +62,16 @@ void del(LNode* head, int val) {
 	}
 	free(dummy);
 	return head;
+}
+
+LNode* reverse(LNode* head) {
+	LNode* prev = NULL;
+	LNode* cur = head;
+	while (cur) {
+		LNode* curNext = cur->next;
+		cur->next = prev;
+		prev = cur;
+		cur = curNext;
+	}
+	return prev;
 }

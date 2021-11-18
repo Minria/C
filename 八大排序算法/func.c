@@ -81,13 +81,35 @@ void quickSort(int* nums, int left, int right) {
 			++i;
 		}
 		nums[j] = nums[i];
-		//if (i < j) {
-		//	int a = nums[i];
-		//	nums[i] = nums[j];
-		//	nums[j] = a;
-		//}
 	}
 	nums[i] = tmp;
 	quickSort(nums, left, i);
 	quickSort(nums, i + 1, right);
+}
+void heapSort(int* nums, int numsSize) {
+	for (int i = numsSize / 2 - 1; i >= 0; i--) {
+		adjustHeap(nums, i, numsSize);
+	}
+	for (int j = numsSize - 1; j > 0; j--) {
+		int tmp = nums[0];
+		nums[0] = nums[j];
+		nums[j] = tmp;
+		adjustHeap(nums, 0, j);
+	}
+}
+void adjustHeap(int* nums, int i, int numsSize) {
+	int temp = nums[i];
+	for (int k = i * 2 + 1; k < numsSize; k = k * 2 + 1) {
+		if (k + 1 < numsSize && nums[k] < nums[k + 1]) {
+			k++;
+		}
+		if (nums[k] > temp) {
+			nums[i] = nums[k];
+			i = k;
+		}
+		else {
+			break;
+		}
+	}
+	nums[i] = temp;
 }

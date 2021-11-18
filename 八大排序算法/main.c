@@ -8,7 +8,8 @@ int main() {
 	//halfInsertSort(nums, numsSize);
 	//selectSort(nums, numsSize);
 	//bubbleSort(nums, numsSize);
-	quickSort(nums, 0, numsSize - 1);
+	//quickSort(nums, 0, numsSize - 1);
+	heapSort(nums, numsSize);
 	for (int i = 0; i < numsSize; i++) {
 		printf("%d ", nums[i]);
 	}

@@ -10,3 +10,5 @@ void halfInsertSort(int* nums, int numsSize);
 void selectSort(int* nums, int numsSize);
 void bubbleSort(int* nums, int numsSize);
 void quickSort(int* nums, int left, int right);
+void heapSort(int* nums, int numsSize);
+void adjustHeap(int* nums, int i, int numsSize);
