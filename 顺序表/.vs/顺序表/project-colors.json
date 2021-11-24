@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "c3f18e05-bd9d-4295-a4c6-e834b2c827c9": {
+      "ProjectGuid": "c3f18e05-bd9d-4295-a4c6-e834b2c827c9",
+      "DisplayName": "顺序表",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

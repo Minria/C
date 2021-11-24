@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "bbcbd17e-5ede-494c-af5d-edd309e57ddd": {
+      "ProjectGuid": "bbcbd17e-5ede-494c-af5d-edd309e57ddd",
+      "DisplayName": "单链表",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

@@ -1,0 +1,5 @@
+﻿  fun.c
+D:\Github\C\单链表\fun.c(64,13): warning C4098: “del”:“void”函数返回值
+  main.c
+  正在生成代码...
+  单链表.vcxproj -> D:\Github\C\单链表\x64\Debug\单链表.exe

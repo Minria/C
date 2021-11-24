@@ -38,7 +38,7 @@ void add(Node *list, int pos, int data) {
 	}
 	list->data[pos] = data;
 	list->usedSize++;
-	printf("添加成功");
+	printf("添加成功\n");
 }
 bool isFull(Node* list) {
 	if (list->usedSize == list->maxSize) {
