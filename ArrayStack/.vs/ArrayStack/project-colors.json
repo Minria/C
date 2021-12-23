@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "f68fbd16-f07f-40e6-8deb-6f1af2396533": {
+      "ProjectGuid": "f68fbd16-f07f-40e6-8deb-6f1af2396533",
+      "DisplayName": "ArrayStack",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
