@@ -1,0 +1,7 @@
+﻿  fun.c
+D:\Github\C\ArrayList\fun.c(20,25): warning C4013: “realloc”未定义；假设外部返回 int
+D:\Github\C\ArrayList\fun.c(20,57): warning C4312: “类型强制转换”: 从“int”转换到更大的“int *”
+D:\Github\C\ArrayList\fun.c(92,6): warning C4013: “free”未定义；假设外部返回 int
+  main.c
+  正在生成代码...
+  ArrayList.vcxproj -> D:\Github\C\ArrayList\x64\Debug\ArrayList.exe
