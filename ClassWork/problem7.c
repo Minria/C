@@ -20,10 +20,10 @@ int binaryFind(int* nums, int numsSize,int target) {
 	return -1;
 }
 
-//int main() {
-//	int nums[] = { 1,2,4,6,8,9,13,34,231,23242 };
-//	int numsSize = sizeof(nums) / 4;
-//	int ret = binaryFind(nums, numsSize, 9);
-//	printf("%d", ret);
-//	return 0;
-//}
+int main() {
+	int nums[] = { 1,2,4,6,8,9,13,34,231,23242 };
+	int numsSize = sizeof(nums) / 4;
+	int ret = binaryFind(nums, numsSize, 9);
+	printf("%d", ret);
+	return 0;
+}

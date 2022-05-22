@@ -20,11 +20,11 @@ void shellSort(int* nums, int numsSize) {
         }
     }
 }
-//int main() {
-//    int nums[] = { 1,5,3,9,0,5,4,2,4,78,11 };
-//    int numsSize = sizeof(nums) / 4;
-//    shellSort(nums, numsSize);
-//    for (int i = 0; i < numsSize; i++) {
-//        printf("%d ", nums[i]);
-//    }
-//}
+int main() {
+    int nums[] = { 1,5,3,9,0,5,4,2,4,78,11 };
+    int numsSize = sizeof(nums) / 4;
+    shellSort(nums, numsSize);
+    for (int i = 0; i < numsSize; i++) {
+        printf("%d ", nums[i]);
+    }
+}

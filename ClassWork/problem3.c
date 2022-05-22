@@ -82,78 +82,78 @@ int icp(char a) {
 	}
 }
 
-//
-//int main() {
-//	Stack* s1 = (Stack*)malloc(sizeof(Stack));
-//	Stack* s2 = (Stack*)malloc(sizeof(Stack));
-//	Stack* s3 = (Stack*)malloc(sizeof(Stack));
-//	s1->next = NULL;
-//	s2->next = NULL;
-//	s3->next = NULL;
-//	push(s2, '#');
-//	char s[256];
-//	gets(s);
-//	int len = strlen(s);
-//	for (int i = 1; s[i] != 0; i++) {
-//		char c = s[i];
-//		if (c >= '0' && c <= '9') {
-//			push(s1, c);
-//		}
-//		else {
-//			char inTop = getTop(s2);
-//			if (isp(inTop) < icp(c)) {
-//				push(s2, c);
-//			}
-//			else {
-//				while (true) {
-//					inTop = getTop(s2);
-//					if (isp(inTop) > icp(c)) {
-//						char tmp = pop(s2);
-//						push(s1, tmp);
-//					}
-//					else if (isp(inTop) == icp(c)) {
-//						pop(s2);
-//						break;
-//					}
-//				}
-//			}
-//		}
-//	}
-//	while (!isEmpty(s1)) {
-//		char tmp = pop(s1);
-//		//printf("%c", tmp);
-//		push(s3, tmp);
-//	}
-//	while (!isEmpty(s3)) {
-//		char c = pop(s3);
-//		if (c > '0' && c < '9') {
-//			push(s1, c);
-//		}
-//		else {
-//			char a = pop(s1);
-//			char b = pop(s1);
-//			int aa = a - 48;
-//			int bb = b - 48;
-//			int cc;
-//			switch (c)
-//			{
-//			case '+':
-//				cc = bb + aa;
-//				break;
-//			case '-':
-//				cc = bb - aa;
-//				break;
-//			case '*':
-//				cc = bb * aa;
-//				break;
-//			case '/':
-//				cc = bb / aa;
-//				break;
-//			}
-//			char ans = cc + 48;
-//			push(s1, ans);
-//		}
-//	}
-//	printf("%c", getTop(s1));
-//	return 0;
-//}
+
+int main() {
+	Stack* s1 = (Stack*)malloc(sizeof(Stack));
+	Stack* s2 = (Stack*)malloc(sizeof(Stack));
+	Stack* s3 = (Stack*)malloc(sizeof(Stack));
+	s1->next = NULL;
+	s2->next = NULL;
+	s3->next = NULL;
+	push(s2, '#');
+	char s[256];
+	gets(s);
+	int len = strlen(s);
+	for (int i = 1; s[i] != 0; i++) {
+		char c = s[i];
+		if (c >= '0' && c <= '9') {
+			push(s1, c);
+		}
+		else {
+			char inTop = getTop(s2);
+			if (isp(inTop) < icp(c)) {
+				push(s2, c);
+			}
+			else {
+				while (true) {
+					inTop = getTop(s2);
+					if (isp(inTop) > icp(c)) {
+						char tmp = pop(s2);
+						push(s1, tmp);
+					}
+					else if (isp(inTop) == icp(c)) {
+						pop(s2);
+						break;
+					}
+				}
+			}
+		}
+	}
+	while (!isEmpty(s1)) {
+		char tmp = pop(s1);
+		//printf("%c", tmp);
+		push(s3, tmp);
+	}
+	while (!isEmpty(s3)) {
+		char c = pop(s3);
+		if (c > '0' && c < '9') {
+			push(s1, c);
+		}
+		else {
+			char a = pop(s1);
+			char b = pop(s1);
+			int aa = a - 48;
+			int bb = b - 48;
+			int cc;
+			switch (c)
+			{
+			case '+':
+				cc = bb + aa;
+				break;
+			case '-':
+				cc = bb - aa;
+				break;
+			case '*':
+				cc = bb * aa;
+				break;
+			case '/':
+				cc = bb / aa;
+				break;
+			}
+			char ans = cc + 48;
+			push(s1, ans);
+		}
+	}
+	printf("%c", getTop(s1));
+	return 0;
+}

@@ -76,13 +76,13 @@ void postorder(TreeNode* root) {
 	printf("%d ", root->val);
 }
 
-//int main() {
-//	TreeNode* root = createTree();
-//	printf("先序遍历->");
-//	preorder(root);
-//	printf("\n中序遍历->");
-//	inorder(root);
-//	printf("\n后序遍历->");
-//	postorder(root);
-//	return 0;
-//}
+int main() {
+	TreeNode* root = createTree();
+	printf("先序遍历->");
+	preorder(root);
+	printf("\n中序遍历->");
+	inorder(root);
+	printf("\n后序遍历->");
+	postorder(root);
+	return 0;
+}

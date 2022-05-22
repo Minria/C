@@ -16,12 +16,12 @@ int getNum(int i, int j) {
 	}
 	return arr[i];
 }
-//int main() {
-//	pack();
-//	printf("%d\n", getNum(0, 0));
-//	printf("%d\n", getNum(1, 1));
-//	printf("%d\n", getNum(2, 2));
-//	printf("%d\n", getNum(3, 3));
-//	printf("%d\n", getNum(3, 0));
-//	return 0;
-//}
+int main() {
+	pack();
+	printf("%d\n", getNum(0, 0));
+	printf("%d\n", getNum(1, 1));
+	printf("%d\n", getNum(2, 2));
+	printf("%d\n", getNum(3, 3));
+	printf("%d\n", getNum(3, 0));
+	return 0;
+}

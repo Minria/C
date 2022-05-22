@@ -39,30 +39,30 @@ void difference(ListNode* head1, ListNode* head2) {
 		}
 	}
 }
-//int main() {
-//	// 为了方便运算，头节点不赋值
-//	ListNode* head1 = (ListNode*)malloc(sizeof(ListNode));
-//	ListNode* head2 = (ListNode*)malloc(sizeof(ListNode));
-//	ListNode* tmp;
-//	int n = 5;
-//	int m = 6;
-//	tmp = head1;
-//	printf("输入%d个数字\n", n);
-//	for (int i = 0; i < n; i++) {
-//		tmp->next = (ListNode*)malloc(sizeof(ListNode));
-//		tmp = tmp->next;
-//		tmp->next = NULL;
-//		scanf("%d", &tmp->val);
-//	}
-//	tmp = head2;
-//	printf("输入%d个数字\n", m);
-//	for (int i = 0; i < m; i++) {
-//		tmp->next = (ListNode*)malloc(sizeof(ListNode));
-//		tmp = tmp->next;
-//		tmp->next = NULL;
-//		scanf("%d", &tmp->val);
-//	}
-//	difference(head1, head2);
-//	print(head1);
-//	return 0;
-//}
+int main() {
+	// 为了方便运算，头节点不赋值
+	ListNode* head1 = (ListNode*)malloc(sizeof(ListNode));
+	ListNode* head2 = (ListNode*)malloc(sizeof(ListNode));
+	ListNode* tmp;
+	int n = 5;
+	int m = 6;
+	tmp = head1;
+	printf("输入%d个数字\n", n);
+	for (int i = 0; i < n; i++) {
+		tmp->next = (ListNode*)malloc(sizeof(ListNode));
+		tmp = tmp->next;
+		tmp->next = NULL;
+		scanf("%d", &tmp->val);
+	}
+	tmp = head2;
+	printf("输入%d个数字\n", m);
+	for (int i = 0; i < m; i++) {
+		tmp->next = (ListNode*)malloc(sizeof(ListNode));
+		tmp = tmp->next;
+		tmp->next = NULL;
+		scanf("%d", &tmp->val);
+	}
+	difference(head1, head2);
+	print(head1);
+	return 0;
+}

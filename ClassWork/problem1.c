@@ -34,18 +34,18 @@ ArrayList* megerSort(ArrayList* L1,ArrayList* L2) {
 	return ans;
 }
 
-//int main() {
-//	int nums1[] = { 2,2,3 }; 
-//	int nums1Size = sizeof(nums1) / 4; 
-//	int nums2[] = { 1,3,3,4 }; 
-//	int nums2Size = sizeof(nums2) / 4; 
-//	ArrayList* L1 = (ArrayList*)malloc(sizeof(ArrayList));
-//	ArrayList* L2 = (ArrayList*)malloc(sizeof(ArrayList));
-//	L1->length = nums1Size;
-//	L1->data = nums1;
-//	L2->data = nums2;
-//	L2->length = nums2Size;  
-//	ArrayList* ret = megerSort(L1,L2);
-//	disPlay(ret);
-//	return 0;
-//}
+int main() {
+	int nums1[] = { 2,2,3 }; 
+	int nums1Size = sizeof(nums1) / 4; 
+	int nums2[] = { 1,3,3,4 }; 
+	int nums2Size = sizeof(nums2) / 4; 
+	ArrayList* L1 = (ArrayList*)malloc(sizeof(ArrayList));
+	ArrayList* L2 = (ArrayList*)malloc(sizeof(ArrayList));
+	L1->length = nums1Size;
+	L1->data = nums1;
+	L2->data = nums2;
+	L2->length = nums2Size;  
+	ArrayList* ret = megerSort(L1,L2);
+	disPlay(ret);
+	return 0;
+}
