@@ -1,2 +1,2 @@
 ﻿  problem6.cpp
-  ClassWork.vcxproj -> D:\Github\C\ClassWork\x64\Debug\ClassWork.exe
+D:\Github\C\ClassWork\problem6.cpp : fatal error C1090: PDB API 调用失败，错误代码“3”: D:\Github\C\ClassWork\x64\Debug\vc143.pdb

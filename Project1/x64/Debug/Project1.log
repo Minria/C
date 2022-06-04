@@ -1,0 +1,11 @@
+﻿  p2.cpp
+D:\Github\C\Project1\p2.cpp(41,19): error C2296: “%”: 无效，因为左操作数的类型为“double”
+D:\Github\C\Project1\p2.cpp(41,19): error C2297: “%”: 无效，因为右操作数的类型为“double”
+D:\Github\C\Project1\p2.cpp(41,9): warning C4473: “printf”: 没有为格式字符串传递足够的参数
+D:\Github\C\Project1\p2.cpp(41,9): message : 占位符和其参数预计 1 可变参数，但提供的却是 0 参数
+D:\Github\C\Project1\p2.cpp(41,9): message : 缺失的可变参数 1 为格式字符串“%f”所需
+D:\Github\C\Project1\p2.cpp(43,19): error C2296: “%”: 无效，因为左操作数的类型为“double”
+D:\Github\C\Project1\p2.cpp(43,19): error C2297: “%”: 无效，因为右操作数的类型为“double”
+D:\Github\C\Project1\p2.cpp(43,9): warning C4473: “printf”: 没有为格式字符串传递足够的参数
+D:\Github\C\Project1\p2.cpp(43,9): message : 占位符和其参数预计 1 可变参数，但提供的却是 0 参数
+D:\Github\C\Project1\p2.cpp(43,9): message : 缺失的可变参数 1 为格式字符串“%f”所需

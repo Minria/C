@@ -30,9 +30,10 @@ int main() {
 	//cout << b << "  " << c << endl;
 
 
-	TestFunc1(); // Ã»ÓĞ´«²ÎÊ±£¬Ê¹ÓÃ²ÎÊıµÄÄ¬ÈÏÖµ
-	TestFunc1(10); // ´«²ÎÊ±£¬Ê¹ÓÃÖ¸¶¨µÄÊµ²Î
-	TestFunc2();
-	TestFunc3(1);
+	//TestFunc1(); // Ã»ï¿½Ğ´ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ê¹ï¿½Ã²ï¿½ï¿½ï¿½ï¿½ï¿½Ä¬ï¿½ï¿½Öµ
+	//TestFunc1(10); // ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ê¹ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½
+	//TestFunc2();
+	//TestFunc3(1);
+
 	return 0;
 }

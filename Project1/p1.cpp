@@ -7,9 +7,9 @@ namespace N
 	}
 }
 #include<stdio.h>
-//using N::b;
-//int main() {
-//	printf("%d\n", N::a);
-//	printf("%d\n", b);
-//	return 0;
-//}
+using N::b;
+int main() {
+	printf("%d\n", N::a);
+	printf("%d\n", b);
+	return 0;
+}
