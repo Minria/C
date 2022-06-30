@@ -1,5 +1,3 @@
-
-
 #include"head.h"
 
 
@@ -89,7 +87,7 @@ void quickSort(int* nums, int left, int right) {
 		nums[j] = nums[i];
 	}
 	nums[i] = tmp;
-	quickSort(nums, left, i);
+	quickSort(nums, left, i - 1);
 	quickSort(nums, i + 1, right);
 }
 
