@@ -3,7 +3,7 @@ using namespace std;
 
 
 // int main() {
-// 	 //Cpp的输入输出
+// 	 //Cpp的输入输�?
 // 	int a = 0;
 // 	char s[10]; // 还是C语言的字符串
 // 	cout << "hello world" << endl;
@@ -13,9 +13,9 @@ using namespace std;
 // }
 
 //int main() {
-//	//Cpp的引用
+//	//Cpp的引�?
 //	int a = 10;
-//	int& ra = a; // 引用只是起了一个别名
+//	int& ra = a; // 引用只是起了一个别�?
 //	cout << a << " " << ra << endl;
 //	cout << &a << " " << &ra << endl;
 //	return 0;
@@ -44,22 +44,22 @@ double add(double a, double b) {
 //	cout << add(1.2, 3.4) << endl;
 //}
 
-// auto关键字
+// auto关键�?
 
 int TestAuto(){
 	return 10;
 }
-//int main(){
-//	int a = 10;
-//	auto b = a;
-//	auto c = 'a';
-//	auto d = TestAuto();
-//	cout << typeid(b).name() << endl;
-//	cout << typeid(c).name() << endl;
-//	cout << typeid(d).name() << endl;
-//	//auto e; 无法通过编译，使用auto定义变量时必须对其进行初始化
-//	return 0;
-//}
+int main(){
+	int a = 10;
+	auto b = a;
+	auto c = 'a';
+	auto d = TestAuto();
+	cout << typeid(b).name() << endl;
+	cout << typeid(c).name() << endl;
+	cout << typeid(d).name() << endl;
+	//auto e; 无法通过编译，使用auto定义变量时必须对其进行初始化
+	return 0;
+}
 
 
 // for语法
