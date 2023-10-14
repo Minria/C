@@ -3,7 +3,7 @@ using namespace std;
 
 
 // int main() {
-// 	 //Cpp的输入输�?
+// 	 //Cpp的输入输�?
 // 	int a = 0;
 // 	char s[10]; // 还是C语言的字符串
 // 	cout << "hello world" << endl;
@@ -13,9 +13,9 @@ using namespace std;
 // }
 
 //int main() {
-//	//Cpp的引�?
+//	//Cpp的引�?
 //	int a = 10;
-//	int& ra = a; // 引用只是起了一个别�?
+//	int& ra = a; // 引用只是起了一个别�?
 //	cout << a << " " << ra << endl;
 //	cout << &a << " " << &ra << endl;
 //	return 0;
@@ -44,7 +44,7 @@ double add(double a, double b) {
 //	cout << add(1.2, 3.4) << endl;
 //}
 
-// auto关键�?
+// auto关键�?
 
 int TestAuto(){
 	return 10;
